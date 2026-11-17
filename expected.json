@@ -1,0 +1,167 @@
+{
+ "harness_commit": "ea480ea4fc7cea7c7e4b77301b14eed6c3438891",
+ "rows": [
+  {
+   "case": "X1-pruned-reuse",
+   "expected": "accept/accept/reject",
+   "observed_2026-11-15": "accept/accept/reject",
+   "section": "x1",
+   "shape": "HYB"
+  },
+  {
+   "case": "X1-unpruned-control",
+   "expected": "accept/reject",
+   "observed_2026-11-15": "accept/reject",
+   "section": "x1",
+   "shape": "HYB"
+  },
+  {
+   "case": "X1-p6-control",
+   "expected": "accept/reject",
+   "observed_2026-11-15": "accept/reject",
+   "section": "x1",
+   "shape": "P6"
+  },
+  {
+   "case": "X2a-at-cap",
+   "expected": "accept",
+   "observed_2026-11-15": "accept",
+   "section": "x2",
+   "shape": "EXP"
+  },
+  {
+   "case": "X2b-one-over",
+   "expected": "reject",
+   "observed_2026-11-15": "reject",
+   "section": "x2",
+   "shape": "EXP"
+  },
+  {
+   "case": "X2c-long-window",
+   "expected": "reject",
+   "observed_2026-11-15": "reject",
+   "section": "x2",
+   "shape": "EXP"
+  },
+  {
+   "case": "X2a-at-cap",
+   "expected": "accept",
+   "observed_2026-11-15": "accept",
+   "section": "x2",
+   "shape": "HYB"
+  },
+  {
+   "case": "X2b-one-over",
+   "expected": "reject",
+   "observed_2026-11-15": "reject",
+   "section": "x2",
+   "shape": "HYB"
+  },
+  {
+   "case": "X2b-store-untouched",
+   "expected": "absent",
+   "observed_2026-11-15": "absent",
+   "section": "x2",
+   "shape": "HYB"
+  },
+  {
+   "case": "X2c-long-window",
+   "expected": "reject",
+   "observed_2026-11-15": "reject",
+   "section": "x2",
+   "shape": "HYB"
+  },
+  {
+   "case": "W01-in-window-replay",
+   "expected": "accept/accept",
+   "observed_2026-11-15": "accept/accept",
+   "section": "x2d",
+   "shape": "EXP"
+  },
+  {
+   "case": "W02-post-window-replay",
+   "expected": "accept/reject",
+   "observed_2026-11-15": "accept/reject",
+   "section": "x2d",
+   "shape": "EXP"
+  },
+  {
+   "case": "W07-expiry-boundary",
+   "expected": "accept/reject",
+   "observed_2026-11-15": "accept/reject",
+   "section": "x2d",
+   "shape": "EXP"
+  },
+  {
+   "case": "W08i-skew-behind",
+   "expected": "reject",
+   "observed_2026-11-15": "reject",
+   "section": "x2d",
+   "shape": "EXP"
+  },
+  {
+   "case": "W08ii-skew-ahead",
+   "expected": "reject",
+   "observed_2026-11-15": "reject",
+   "section": "x2d",
+   "shape": "EXP"
+  },
+  {
+   "case": "W09a-no-exp",
+   "expected": "reject",
+   "observed_2026-11-15": "reject",
+   "section": "x2d",
+   "shape": "EXP"
+  },
+  {
+   "case": "W09b-no-iat",
+   "expected": "reject",
+   "observed_2026-11-15": "reject",
+   "section": "x2d",
+   "shape": "EXP"
+  },
+  {
+   "case": "W01-in-window-replay",
+   "expected": "accept/reject",
+   "observed_2026-11-15": "accept/reject",
+   "section": "x2d",
+   "shape": "HYB"
+  },
+  {
+   "case": "W02-post-window-replay",
+   "expected": "accept/reject",
+   "observed_2026-11-15": "accept/reject",
+   "section": "x2d",
+   "shape": "HYB"
+  },
+  {
+   "case": "W07-expiry-boundary",
+   "expected": "accept/reject",
+   "observed_2026-11-15": "accept/reject",
+   "section": "x2d",
+   "shape": "HYB"
+  },
+  {
+   "case": "W06-state-loss+expiry",
+   "expected": "accept/accept/reject",
+   "observed_2026-11-15": "accept/accept/reject",
+   "section": "x2d",
+   "shape": "HYB"
+  },
+  {
+   "case": "W09c-hyb-no-exp",
+   "expected": "reject",
+   "observed_2026-11-15": "reject",
+   "section": "x2d",
+   "shape": "HYB"
+  },
+  {
+   "case": "W12-long-lived-replay",
+   "expected": "accept/reject",
+   "observed_2026-11-15": "accept/reject",
+   "section": "x2d",
+   "shape": "HYB"
+  }
+ ],
+ "what": "Pre-registered observations for the receipt-shape packet. Predictions committed 2026-11-15T21:40:38Z (f5927713) in the public repository, before the harness (d7554879) and the first results (ea480ea4). A run meets them when every printed row matches 'expected' and the final line reads: DIVERGENCES from registered predictions: none"
+}
