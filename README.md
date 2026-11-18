@@ -37,9 +37,13 @@ cd hfq001-wider-comparison/hfq001-wider-comparison-2026-11-15
 python3 compare-extension.py
 ```
 
-The harness first re-verifies itself against the settled test vectors (a
-gate; if it fails, nothing runs), then prints one line per cell and writes
-`extension-results.json`. Success is the last line:
+The harness first gates on the byte layer's self-check, `jcs.selfcheck()`:
+the RFC 8785 Appendix B values, the key sort, and the §3.2.4 test bytes
+(if it fails, nothing runs). It then prints one line per cell and writes
+`extension-results.json`. The settled results are checked inside the run,
+not by that gate: every mint's signature is recovered and checked, and X2d
+re-runs the thirteen settled cells against `results-run1.json`. The
+thread's vector file, `source-vectors.json`, is not loaded by this harness. Success is the last line:
 
 ```
 DIVERGENCES from registered predictions: none
